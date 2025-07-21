@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp - Front End</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a{
+            padding: 10px 5px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 15px 5px;
+        }
+
+        nav ul li a:hover{
+            color:white;
+            background-color: blue;
+        }
+
+
+        .row {
+            margin: 5px;
+        }
+
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+
+        table {
+            box-shadow: 5px 4px 21px -5px rgba(48,48,48,0.79);
+            -webkit-box-shadow: 5px 4px 21px -5px rgba(48,48,48,0.79);
+            -moz-box-shadow: 5px 4px 21px -5px rgba(48,48,48,0.79);
+            border: solid 1px rgb(87, 87, 87);
+        }
+
+        table thead th{
+            background-color:  rgb(83, 78, 78);
+            color: white;
+        }
+
+        table tfoot th{
+            background-color: rgb(116, 113, 113);
+        }
+
+        table tbody tr:nth-child(even){
+            background-color: rgb(179, 162, 162);
+        }
+
+        table tr:hover td{
+            background-color: antiquewhite;
+        }
+
+        blockquote {
+            background-color: lightblue;
+            padding: 6px;
+            margin-left: 0;
+            border-left: solid 8px blue;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1> Curso de HTML, com Diogo Mainardes </h1>
+        <p>Nesse pequeno curso sobre HTML, oferecido Bootcamp do Santander em parceira com a DIO, vimos as principais ferramenta que serão fundamentais para o desenvolvimento, como o VS Code, o inspensor do Google Chrome. Além de abordar conceito importantes como acessibilidade e SEO, essenciais para uma melhor analise e desempelho do código desenvolvido. Além disso, estudamos diversas tags HTML-  desde as mais básicas, como p e h1, até as mais avançadas e semânticas, como main e picture, passando por formulários, tabelas e mídias.</p>
+        <nav>
+            <h2>Navegação</h2>
+            <ul>
+                <li><a href="#basico">HTML Básico</a></li>
+                <li><a href="#formulario">Formulários</a></li>
+                <li><a href="#midias">Mídias</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#semantica">Semântica</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <main>
+        <section id="basico">
+            <h2><u> Introdução HTML </u></h2>
+            <small><a href="#header">(Voltar)</a></small>
+            <p> Nesse vídeo aprendemos a estrutura básica de HTML, algumas tags, atributos, textos e listas. </p>
+
+            <i> Tag para deixar o texto em itálico - Tag i ou em </i> <br>
+            <strong> Tag para deixar o texto em negrito - Tag strong ou b</strong>
+            <p> Tag de paragrafo - p, e abaixo a tag INPUT, para a entrada de dados, do TYPE texto:</p>
+            <input type="text">
+            <p>Tag para link - a</p>
+            <a href="https://www.google.com/">Clique aqui para ir ao google</a>
+            <p> Tag para colocar imagens com o atributo ALT para sua identificação e WIDTH para seu tamanho - img</p>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/02/0b/8f/020b8fff-15af-18e6-9ff2-934ea0a4933f/logo_gsa_gradient_ios_color-0-0-1x_U007epad-0-0-0-1-0-0-sRGB-0-0-85-220.png/1200x600wa.png" alt="google" width="200px">
+
+            <p>Além disso, sobre os atributos, como class, type, width e o style.</p>
+            <p style="color: red;"> Exemplo de Style</p>
+
+            <p> Títulos: </p>
+            <h1> Título h1 </h1>
+            <h2> Título h2 </h2>
+            <h3> Título h3 </h3>
+            <h4> Título h4 </h4>
+            <h5> Título h5 </h5>
+            <h6> Título h6 </h6>
+
+            <p> Listas: </p>
+            <p> Listas ordenadas: </p>
+
+            <ol>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+
+            <p> Listas não ordenadas: </p>
+            <ul>
+                <li>Produto</li>
+                <li>Produto</li>
+                <li>Produto</li>
+                <li>Produto</li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2><u> Formulários </u></h2>
+            <small><a href="#header">(Voltar)</a></small>
+            <p> Nessa série de vídeos sobre formularios, foi mostrado tags para a criação de um formulario, a form, input, label, atributos</p>
+
+            <!-- method: GET - Os dados do formulário são enviados na URL, como parâmetros da query string
+            e POTS - Os dados do formulário são enviados no corpo (body) da requisição HTTP, não na URL. -->
+
+            <!-- target: abrir outra pagina na mesma aba ou não-->
+
+            <!-- autocomplete: para controlar se o navegador pode sugerir automaticamente valores já digitados anteriormente pelo usuário -->
+            
+            <!-- on - alguma coisa, onsubmit: clicou no botão vai fazer (javascript) -->
+            
+            <form name="form" method="" onsubmit="alert('enviei o form');" autocomplete="" action="#">
+            
+                <fieldset>
+                <legend>Dados</legend>
+                    <div class="row">
+                        <label> Nome: </label><input type="text" name="name" />
+                        <label> Sobrenome: </label> <input type="text"/> <br>
+                        <label> Number:    </label> <input type="number" min="0" step="5" max="90" name="idade"/><br>
+                        <label> Senha:  </label> <input type="password" name="password" /> <br>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <label> Ranger: </label> <input type="range" min="0" step="5" max="90" /> <br>
+                    <label> Color:  </label> <input type="color" /> <br>
+                    <label> E-mail: </label> <input type="email" /> <br>
+                    <label> Url:    </label> <input type="url" /> <br>
+                    <label> Data:   </label> <input type="date" /> <br>
+                    <label> Semana: </label> <input type="week" /> <br>
+                    <label> Month:  </label> <input type="month" /> <br>
+                </div>
+
+                <div class="row">
+                    <label> Checkbox: </label> <br>
+                        <input type="checkbox" name="opcao" value="item1"/> Item 1  <br>
+                        <input type="checkbox" name="opcao" value="item2"/> Item 2 <br>
+                    <label> Radio:    </label> <br>
+                        <input type="radio" name="opcao" value="sim" /> Sim  <br>
+                        <input type="radio" name="opcao" value="não" /> Não  <br>
+                    <label> Seleção: </label> <br>
+                        <select name="" id="">
+                            <option value="opcao1">Opção 1</option>
+                            <option value="opcao2">Opção 2</option>
+                            <option value="opcao3">Opção 3</option>
+                            <option value="opcao4">Opção 4</option>
+                        </select> <br>
+                </div>
+
+                <div class="row">
+                    <label> Hidden:   </label> <input type="hidden" /> <br>
+                    <label> File:     </label> <input type="file" multiple /> <br>
+                    <label> Search:   </label> <input type="search" /> <br>
+                    <label> Mensagem: </label>
+                    <textarea rows="10" cols="50"> </textarea> <br> <br>
+                </div>
+
+                <fieldset>
+                    <div class="row">
+                        <button type="submit"> Enviar </button>
+                        <button type="reset"> Limpar </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="midias">
+            <h2><u> Mídias </u></h2>
+            <small><a href="#header">(Voltar)</a></small>
+            <p> Além disso, vimos as tags utilizadas para inserir imagens, vídeos, audio na pagina web, além do Iframe.</p>
+            <h3> IFrame: </h3>
+            <iframe src="https://www.dio.me/" height="400px" width="700px" loading="lazy"> </iframe>
+
+            <p>Imagem: </p>
+            <img src="https://s2-techtudo.glbimg.com/svZ5ddMkkzmsWzUGXlGVxd-VtAY=/0x0:746x346/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2024/r/g/baCsGaTCKk3cykXVhYsQ/doodle-boas-festas.png" alt="Imagem do Google" width="500px">
+
+            <p>Audio: </p>
+            <audio controls>
+                <source src="music.mp3" />
+                Seu navegador não tem suporte para audio
+            </audio>
+
+            <p>Video: </p>
+            <video>
+                <source src="video.mp4" />
+                Seu navegador não tem suporte para video
+            </video>
+        </section>
+
+        <section id="tabelas">
+            <h2><u> Tabelas </u></h2>
+            <small><a href="#header">(Voltar)</a></small>
+            <table summary="Informacoes pessoais" width="250" cellspacing="5" cellspadding="5" align="center">
+                <caption> Tabela de idades e endereços dos alunos do DIO </caption>
+                <thead>
+                    <tr>
+                        <th colspan="3">Minha tabela</th>
+                    </tr>
+                    <tr id="1">
+                        <th title="Nome Completo">Nome</th>
+                        <th>Idade</th>
+                        <th>Endereço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="2">
+                        <td>Andressa</td>
+                        <td>19</td>
+                        <td>Anápolis</td>
+                    </tr>
+                    <tr id="3">
+                        <td>Maria</td>
+                        <td>24</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr id="4">
+                        <td>Pedro</td>
+                        <td>54</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                    <tr id="5">
+                        <td>Eliana</td>
+                        <td>37</td>
+                        <td>Curitiba</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr id="5">
+                        <th>Total</th>
+                        <th>4</th>
+                        <th>4</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="semantica">
+            <h2><u> Semantica</u></h2>
+            <small><a href="#header">(Voltar)</a></small>
+            <p>Tags header, main e footer. Além das tags section, aside e nav.As outras foram, a tag article, blockquote. E por fim, figure, figcaption e picture.</p>
+
+            <p>Além disso, o professor Diogo, falou sobre a importancia de utilizar as tags para semántica, para melhor busca feito pelo navegador, com o conceito de Google Bot e  Web Scraping, que são essenciais para acessibilidade e mecanismos de SEO.</p>
+
+            <article>
+                <h3>Assunto de algum tema</h3>
+                <p>Publicação em <time pubdate> 22/01/2019 as 17:00 </time></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ex tempora amet a, quos obcaecati repellendus vitae, laborum vero deserunt id delectus corporis, molestias explicabo repellat nostrum? Saepe, laboriosam ad?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ex tempora amet a, quos obcaecati repellendus vitae, laborum vero deserunt id delectus corporis, molestias explicabo repellat nostrum? Saepe, laboriosam ad?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa ex tempora amet a, quos obcaecati repellendus vitae, laborum vero deserunt id delectus corporis, molestias explicabo repellat nostrum? Saepe, laboriosam ad?</p>
+                <blockquote cite="https://">
+                    <p>Citação</p>
+                </blockquote>
+            </article>
+
+            <figure>
+                <img src="https://a-static.mlcdn.com.br/800x560/papel-de-parede-paisagem-praia-coqueiro-sol-mar-gg439-quartinho-decorado/oliststore/mgl0qspf5t75f82s/a3156be12dff07cc9e12845d49b8d7cd.jpeg" alt="paisagem" width="200px">
+                <figcaption>Descrição da imagem</figcaption>
+            </figure>
+
+            <picture>
+                <source srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_o-wQ-ffLc4ryzQV33WW9Hf3q2wsWc70HQw&s" media="(min-width: 600px)">
+            </picture>
+
+            <small><a href="#header">(Voltar)</a></small>
+        </section>
+
+    </main>
+    <footer>
+        <hr>
+        <p><strong> Instituição: </strong>Santander + DIO</p>
+        <p><Strong> Autor:</Strong> Andressa Rezende - <i>Estudante de Engenharia de Software - Dev Front-End</i></p>
+    </footer>
+    
+</body>
+</html>
