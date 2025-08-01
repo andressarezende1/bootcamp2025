@@ -17,18 +17,21 @@
 
 <h2> 3️⃣ JavaScript </h2>
 <p> Em andamento...</p>
+
 ##
 <h3>Ferramentas utilizadas:</h3>
 <div>
   <a href="https://code.visualstudio.com">
     <img align="center" alt="Logo do VsCode" height="35" width="37" src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png">
 </div> 
+    
 ##
 <h3>Tecnologias utilizadas:</h3>
 <div style="display: inline_block"><br>
   <img align="center" alt="Logo do HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
   <img align="center" alt="Logo do CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
+    
 ##
 <h3>Bibliotecas utilizadas:</h3>
 <div>
