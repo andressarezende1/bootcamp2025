@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    display: grid;
+    box-sizing: border-box; 
+    grid-template-columns: 20vw repeat(3, 26.5vw); /* Quatro colunas no mesmo tamanho (fração) em relação a tema (tornanso responsivo)*/
+    grid-template-rows:  14vh repeat(2, 35vh) 20vh; /* 1 linha com 100px e outras 3 linhas com 300px*/
+    grid-template-areas: 
+        "header header header header"
+        "navbar main-content main-content main-content"
+        "navbar content-1 content-2 content-3"
+        "navbar footer footer footer"; /*Definição das areas*/
+}
+
+body h3 {
+    font-size: 1.2vw;
+}
+
+body p {
+    font-size: 1vw;
+}
+
+header {
+    background-color: #0a192f;
+    color: #ffffff;
+    grid-area: header; /*Informar a area estabelicida*/
+    padding: 20px;
+}
+
+header h1 {
+    margin: auto;
+    font-size: 3vw;
+}
+
+nav {
+    background-color: #1e2a38;
+    grid-area: navbar;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1.6vw;
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+li a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #64ffda;
+}
+
+.main-content {
+    background-color: white;
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between; 
+}
+
+.main-content h2 {
+    font-size: 1.5rem;
+    text-decoration: underline 7px #0077b6;
+    margin-bottom: -15px;
+}
+
+.main-content p {
+    line-height: 1.5;
+}
+
+.words {
+    font-size: 1.7vw;
+    font-family: "Abril Fatface", serif;
+    text-transform: uppercase;
+    word-spacing: 70px;
+    color: #ffffff;
+    background: #0A192F;
+    background: linear-gradient(90deg,rgba(10, 25, 47, 1) 0%, rgba(0, 119, 182, 1) 50%, rgba(10, 25, 47, 1) 100%);
+}
+
+.content-1 {
+    border: 2px solid #64ffda;
+    margin: 0px 5px;
+    border-radius: 20px 20px 0px 0px;
+    grid-area: content-1;
+}
+
+.content-2 {
+    border: 2px solid #64ffda;
+    margin: 0px 5px;
+    border-radius: 20px 20px 0px 0px;
+    grid-area: content-2;
+}
+.content-2 ul {
+    padding-left: 1vh;
+}
+
+.content-2 li {
+    text-align: left;
+    font-size: 1vw;
+}
+
+.content-2 i {
+    color: #64ffda;
+}
+
+.content-3 {
+    border: 2px solid #64ffda;
+    margin: 0px 5px;
+    border-radius: 20px 20px 0px 0px;
+    grid-area: content-3;
+}
+
+button {
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    background-color: #0077b6;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    width: 80%;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #0a192f;
+    grid-area: footer;
+}
+
+footer p,
+footer i{
+    color: #aaaaaa;
+}
+
+footer i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "header"
+            "navbar"
+            "main-content"
+            "content-1"
+            "content-2"
+            "content-3"
+            "footer";
+    }
+
+    body h3 {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 3vw;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        font-size: 1.2rem; 
+        margin: 8px 0;
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .main-content p,
+    .content-2 li,
+    .content-1 p,
+    .content-3 p {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .words {
+        font-size: 4vw;
+        word-spacing: normal;
+        padding: 10px;
+    }
+
+    .content-1,
+    .content-2,
+    .content-3 {
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer i {
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+}
+

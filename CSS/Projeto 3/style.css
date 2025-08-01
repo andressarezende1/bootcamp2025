@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    text-decoration: underline 4px blueviolet;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+nav li {
+    background-color: rgb(172, 98, 241);
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#skills, #education{
+    background-color: rgb(186, 180, 192);
+    border: 1px solid rgb(216, 87, 216);
+    border-radius: 10px;
+}
+
+#skills li {
+    list-style: decimal;
+}
+
+footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 16px auto;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    #about {
+        flex-basis: 500px;
+    }
+
+    #skills, #education {
+        flex: 1;
+    }
+}
+

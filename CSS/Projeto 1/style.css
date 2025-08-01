@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Conteúdo ocupar 100% da altura da tela*/
+    box-sizing: border-box; /* Respeitar o limite da tela*/
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    display: flex; /* Permite a flexibilidade*/
+    flex-direction: column; /* Os conteúdo serão agrupados em uma coluna */
+}
+
+header {
+    background-color:#16371c;
+    text-align: center;
+    color: #fdfdfd;
+    padding: 50px;
+    transition: ease 0.6s;
+}
+
+header:hover {
+    background-color: #d0fd02;
+    color:#16371c;;
+}
+
+header h1, #end h1 {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    margin: 0px;
+}
+
+header h2, #end h2 {
+    font-size: 1.5rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: normal;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+header button, #end button {
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #16371c;;
+    background-color: #d0fd02;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: ease 0.6s;
+}
+
+header:hover button, #end:hover button  {
+    background-color: #16371c;;
+    color: #d0fd02;
+    padding: 10px 25px;
+}
+
+main {
+    text-align: center; 
+    max-width: 1300px; /* Conteúdo ocupar o comprimento máximo*/
+    margin: auto; /* Distribui automaticamente o espaço disponível - centralizando*/
+}
+
+#about h3,
+#photo h3  {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: underline 7px #d0fd02;
+    padding: 20px 0px;
+}
+
+.details {
+    display: flex;
+    gap: 16px;
+    padding: 0 30px;
+}
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+}
+
+.card {
+    font-size: 1.2rem;
+    color: #16371c;
+    background-color: rgb(80, 127, 25, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 9px 9px 0px 0px rgb(208, 253, 2);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* itens flexíveis podem quebrar linha */
+    justify-content: center; /*Elementos ficam no centro*/
+    gap: 20px;
+}
+
+.image-card1, .image-card2, .image-card3 {
+    background-color: #455f20;
+    border-radius: 20px;
+    padding: 10px;
+    flex-basis: 330px; /*Define o tamanho base inicial do item*/
+}
+
+img {
+    width: 390px;
+    height: 360px;
+}
+
+.image-card1 img, .image-card2 img, .image-card3 img {
+    width: 100%;
+}
+
+.image-card1 h2, .image-card2 h2, .image-card3 h2 {
+    font-size: 1.4rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    color: #fdfdfd;
+    padding-bottom: 6px;
+}
+
+.image-card1 p, .image-card2 p, .image-card3 p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+#end {
+    padding: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: #16371c;
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: #fdfdfd;
+}
