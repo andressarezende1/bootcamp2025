@@ -11,7 +11,7 @@ Desafio: Recriando o Wikipedia com Layout Moderno
 
 Projeto 1: Desenvolvendo uma landing page com conceitos simples de CSS <br>
 Projeto 2: Aplicando a propriedade Grid para um site educacional <br>
-Projeto 3: Apredendo o desenvolvimento Mobile First <br> <br>
+Projeto 3: Aprendendo o desenvolvimento Mobile First <br>
 
 Desafio 1: Criando sua Primeira Landing Page com HTML e CSS <br>
 Desafio 2: Clonando a Página do Youtube com CSS <br>
