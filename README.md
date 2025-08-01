@@ -1,4 +1,4 @@
-<h1> Projetos e Desafios desenvolvidos durante o ✨ BootCamp Santander 2025 + DIO ✨ </h1>
+<h1> Projetos e Desafios desenvolvidos durante o ✨BootCamp Santander 2025 + DIO✨ </h1>
 
 <h2> 1️⃣ HTML </h2>
 <p> Projetos simples para fixar as tags e HTML semântico</p>
