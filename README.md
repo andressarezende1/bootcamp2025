@@ -41,7 +41,7 @@
 <h3>Bibliotecas utilizadas:</h3>
 <div>
 <a href="https://reactrouter.com/en/main">
-    <img align="center" alt="Logo da Font Awesome" height="30" width="45" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8NB7RThnWvPNaPHSEaBPkHRLo16WSYeg3fbsG3XwPzjYYzkEKz2JTsO7U-_st9xLd9B8&usqp=CAU](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo85Wuoc9MD1RG664R5VJIfMEnr_DX5QbL9g&s">
+    <img align="center" alt="Logo da Font Awesome" height="30" width="45" src="https://ps.w.org/font-awesome/assets/icon-256x256.png?rev=1991998">
 <a href="https://fonts.google.com/">
     <img align="center" alt="Logo do Google Fonts" height="30" width="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUP5DizHClmiEANb7443enra5h_mzpCzC_tQ&s">
 </div>
