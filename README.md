@@ -25,30 +25,23 @@
 <h3>Ferramentas utilizadas:</h3>
 <div>
   <a href="https://code.visualstudio.com">
-    <img align="center" alt="Rafa-React" height="30" width="37" src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png">
-  <a href="https://figma.com">
-    <img align="center" alt="Rafa-React" height="30" width="37" src="https://cdn.iconscout.com/icon/free/png-256/free-figma-10516008-8630394.png?f=webp">
+    <img align="center" alt="Logo do VsCode" height="30" width="37" src="https://img.icons8.com/?size=48&id=9OGIyU8hrxW5&format=png">
 </div>
     
 ##
 <h3>Tecnologias utilizadas:</h3>
 <div style="display: inline_block"><br>
-  <img align="center" alt="Rafa-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-  <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Rafa-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Rafa-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
+  <img align="center" alt="Logo do HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Logo do CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 </div>
 
 ##
 <h3>Bibliotecas utilizadas:</h3>
 <div>
-  <a href="https://react-icons.github.io/react-icons/">
-    <img align="center" alt="Rafa-React" height="30" width="30" src="https://raw.githubusercontent.com/react-icons/react-icons/master/react-icons.svg">
-</a>
 <a href="https://reactrouter.com/en/main">
-    <img align="center" alt="Rafa-React" height="30" width="45" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8NB7RThnWvPNaPHSEaBPkHRLo16WSYeg3fbsG3XwPzjYYzkEKz2JTsO7U-_st9xLd9B8&usqp=CAU">
+    <img align="center" alt="Logo da Font Awesome" height="30" width="45" src="[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8NB7RThnWvPNaPHSEaBPkHRLo16WSYeg3fbsG3XwPzjYYzkEKz2JTsO7U-_st9xLd9B8&usqp=CAU](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo85Wuoc9MD1RG664R5VJIfMEnr_DX5QbL9g&s)">
 </a>
 <a href="https://fonts.google.com/">
-    <img align="center" alt="Rafa-React" height="30" width="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUP5DizHClmiEANb7443enra5h_mzpCzC_tQ&s">
+    <img align="center" alt="Logo do Google Fonts" height="30" width="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUP5DizHClmiEANb7443enra5h_mzpCzC_tQ&s">
 </a>
 </div>
