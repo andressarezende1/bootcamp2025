@@ -1,4 +1,4 @@
-<h1> Projetos e Desafios desenvolvido durante o BootCamp Santander 2025 com parceira com DIO </h1>
+<h1> Projetos e Desafios desenvolvidos durante o BootCamp Santander 2025 com parceira da DIO </h1>
 
 <h2> HTML </h2>
 <p> Projetos simples para fixar as tags e HTML semântico</p>
