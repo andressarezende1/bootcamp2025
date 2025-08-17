@@ -1,0 +1,9 @@
+footer {
+  margin-bottom: 5rem;
+}
+
+footer p {
+  font-size: .875rem;
+  text-align: center;
+  padding: 1rem;
+}

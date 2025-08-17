@@ -1,0 +1,120 @@
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    z-index: 2;
+}
+
+.header__toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__brand .brand__logo {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: var(--primary-bg-color);
+}
+
+.menu__item {
+    width: 100%;
+}
+
+.menu__link {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu--mobile {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+
+.menu--mobile .menu__link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
+.menu__link.active .menu__icon, 
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon, 
+.menu__link:hover .menu__text {
+    color: var(--primary-color);
+}
+
+.menu__icon, .menu__text {
+    color: var(--text-color);
+}
+
+.menu__icon {
+    font-size: 1.5rem;
+}
+
+.menu__text {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    display: none;
+}
+
+.menu--principal {
+    gap: 1rem;
+}
+
+.menu--social {
+    gap: 1rem;
+}
+
+/* Esconde o menu mobile por padrão */
+.nav--mobile {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: var(--primary-bg-color);
+    border-top: 1px solid var(--primary-border-color);
+    z-index: 999;
+}
+
+/* Mostra o menu mobile quando estiver ativo */
+.nav--mobile.active {
+    display: flex;
+}
+
+/* Ícone de menu mobile (hamburger) */
+#toggleMobileMenu {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  #toggleMobileMenu {
+    display: none;
+  }
+}
